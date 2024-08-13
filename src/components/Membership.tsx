@@ -3,7 +3,7 @@ import Wrap from './Wrap'
 export default function Membership() {
   return (
     <Wrap>
-      <p className='heading'>Rush's</p>
+      <p className='heading'> Ludo Wala 's</p>
       <p className='sub-heading'>Membership & Certification</p>
       <div className='mt-7 flex sm:mt-14'>
         <div className='w-1/3 p-1 sm:p-3'>

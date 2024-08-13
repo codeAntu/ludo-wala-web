@@ -9,7 +9,7 @@ export default function Install() {
       <p className='heading'>how to </p>
       <p className='sub-heading'>Install {APP_NAME}</p>
       <p className='body-content'>
-        Steps to install the Rush real money game app & win money online are :{' '}
+        Steps to install the Ludo Wala real money game app & win money online are :{' '}
         <span className='cursor-pointer text-violet-600' onClick={() => setIsExpanded(!isExpanded)}>
           ...{isExpanded ? 'less' : 'more'}
         </span>
@@ -21,7 +21,7 @@ export default function Install() {
               Click “Download App” button to get an online cash games app for Android or iOS.
             </li>
             <li className='leading-5 sm:leading-10'>
-              Tap “Download anyway” on the general warning message. Rush is 100% safe & secure & trusted by 5 Crore+
+              Tap “Download anyway” on the general warning message. Ludo Wala is 100% safe & secure & trusted by 5 Crore+
               real players.
             </li>
             <li className='leading-5 sm:leading-10'>
