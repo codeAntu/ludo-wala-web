@@ -1,12 +1,11 @@
+const payments = [
+  './images/payments/G_pay.png',
+  './images/payments/Phone_pe.png',
+  './images/payments/Paytm.png',
+  './images/payments/BHIM.png',
+  './images/payments/amazon_pay.png',
+]
 export default function Withdraw() {
-  const payments = [
-    './images/payments/G_pay.png',
-    './images/payments/Phone_pe.png',
-    './images/payments/Paytm.png',
-    './images/payments/BHIM.png',
-    './images/payments/amazon_pay.png',
-  ]
-
   return (
     <div className='flex flex-col items-center justify-center gap-16'>
       <div className='mw flex w-full flex-col items-center justify-center'>
@@ -17,7 +16,7 @@ export default function Withdraw() {
         style={{
           backgroundImage: "url('./images/bg.png')",
         }}
-        className='flex items-center justify-center gap-7 bg-cover py-28 px-32'
+        className='flex items-center justify-center gap-7 bg-cover px-32 py-28'
       >
         {payments.map((payment, index) => (
           <div key={index} className='m-4'>
