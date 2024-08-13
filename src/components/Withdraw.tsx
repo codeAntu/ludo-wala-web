@@ -8,7 +8,7 @@ export default function Withdraw() {
   ]
 
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center gap-16'>
       <div className='mw flex w-full flex-col items-center justify-center'>
         <p className='heading'>Instantly</p>
         <p className='sub-heading'>Withdraw Winnings</p>
@@ -17,7 +17,7 @@ export default function Withdraw() {
         style={{
           backgroundImage: "url('./images/bg.png')",
         }}
-        className='flex items-center justify-center gap-7 bg-contain bg-center bg-no-repeat py-28'
+        className='flex items-center justify-center gap-7 bg-cover py-28 px-32'
       >
         {payments.map((payment, index) => (
           <div key={index} className='m-4'>
