@@ -11,13 +11,13 @@ const options = [
     href: '/refer',
   },
   {
-    name: "FAQ's",
-    href: '/faqs',
-  },
-  {
     name: 'Ludo Tournament',
     href: '/ludo',
     new: true,
+  },
+  {
+    name: "FAQ's",
+    href: '/faqs',
   },
 ]
 
@@ -26,13 +26,13 @@ export default function Header() {
     <div className='fixed top-0 flex w-full items-center justify-center px-5 backdrop-blur-2xl'>
       <div className='mw flex w-full items-center justify-between py-3'>
         <img src='./icon.png' alt='icon' className='h-8 sm:h-11' />
-        <div className='hidden gap-5 sm:flex'>
+        <div className='hidden gap-10 sm:flex'>
           {options.map((option) => (
             <Option key={option.name} name={option.name} href={option.href} isNew={option.new} />
           ))}
         </div>
-        <div className='flex sm:hidden border px-1 rounded-lg border-white/50'>
-          <MenuIcon className='text-white w-4'/>
+        <div className='flex rounded-lg border border-white/50 px-1 sm:hidden'>
+          <MenuIcon className='w-4 text-white' />
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ function Option({ name, href, isNew }: { name: string; href: string; isNew?: boo
   return (
     <Link
       to={href}
-      className={`text-[0.7rem] font-medium uppercase ${location.pathname === href ? 'text-white' : 'text-white/70'}`}
+      className={`text-sm font-medium uppercase ${location.pathname === href ? 'text-white' : 'text-white/70'}`}
     >
       {name}
 
