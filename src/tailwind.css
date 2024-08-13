@@ -22,3 +22,14 @@ body {
     @apply bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white;
   }
 }
+
+.grad {
+  background: linear-gradient(85.98deg, #ffe974 10.89%, #d06cff 91.16%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mw{
+  max-width: 1200px;
+}
