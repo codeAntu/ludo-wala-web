@@ -28,7 +28,7 @@ body {
     @apply grad text-center text-xl font-bold sm:text-3xl w-full;
   }
   .body-content {
-    @apply mt-4 text-center text-sm font-light text-white/60 sm:text-xl;
+    @apply mt-4 text-center text-xs font-light text-white/60 sm:text-xl;
   }
 }
 
