@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +10,7 @@ const router = createBrowserRouter([
     element: <HomeScreen />,
   },
 ]); 
+
 function App() {
   return <RouterProvider router={router} />
 }
