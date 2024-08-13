@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       bg: '#1b0029',
+      bg2: '#290140',
+      bg3: '#340e49',
     },
   },
   plugins: [],
