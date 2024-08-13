@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'
 
 const options = [
   {
@@ -16,6 +16,7 @@ const options = [
   {
     name: 'Ludo Tournament',
     href: '/ludo',
+    new: true,
   },
 ]
 
@@ -26,7 +27,7 @@ export default function Header() {
         <img src='./icon.png' alt='icon' className='size-14' />
         <div className='flex gap-5'>
           {options.map((option) => (
-            <Option key={option.name} name={option.name} href={option.href} />
+            <Option key={option.name} name={option.name} href={option.href} isNew={option.new} />
           ))}
         </div>
       </div>
@@ -34,7 +35,7 @@ export default function Header() {
   )
 }
 
-function Option({ name, href }: { name: string; href: string }) {
+function Option({ name, href, isNew }: { name: string; href: string; isNew?: boolean }) {
   const location = useLocation()
 
   return (
@@ -43,6 +44,12 @@ function Option({ name, href }: { name: string; href: string }) {
       className={`text-[0.7rem] font-medium uppercase ${location.pathname === href ? 'text-white' : 'text-white/70'}`}
     >
       {name}
+
+      {isNew && (
+        <span className='rubik ml-2 rounded-full bg-rose-500 px-1.5 py-[0.1rem] text-[0.5rem] font-bold text-white'>
+          New
+        </span>
+      )}
     </Link>
   )
 }
