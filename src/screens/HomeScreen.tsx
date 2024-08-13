@@ -5,6 +5,7 @@ import Withdraw from '@/components/Withdraw'
 import SkillBasedGames from '@/components/SkillBasedGames'
 import Install from '@/components/Install'
 import FAQ from '@/components/FAQ'
+import Membership from '@/components/Membership'
 
 export default function HomeScreen() {
   return (
@@ -17,6 +18,7 @@ export default function HomeScreen() {
         <Install />
         <SkillBasedGames />
         <FAQ />
+        <Membership />
       </div>
     </div>
   )
