@@ -23,7 +23,7 @@ const options = [
 
 export default function Header() {
   return (
-    <div className='fixed top-0 flex w-full items-center justify-center px-5 backdrop-blur-2xl'>
+    <div className='fixed top-0 flex w-full items-center justify-center px-5 backdrop-blur-3xl'>
       <div className='mw flex w-full items-center justify-between py-3'>
         <img src='./icon.png' alt='icon' className='h-8 sm:h-11' />
         <div className='hidden gap-10 sm:flex'>
