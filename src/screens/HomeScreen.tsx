@@ -4,7 +4,7 @@ import Badges from '@/components/Badges'
 import Withdraw from '@/components/Withdraw'
 import SkillBasedGames from '@/components/SkillBasedGames'
 import Install from '@/components/Install'
-
+import FAQ from '@/components/FAQ'
 
 export default function HomeScreen() {
   return (
@@ -16,6 +16,7 @@ export default function HomeScreen() {
         <Rating />
         <Install />
         <SkillBasedGames />
+        <FAQ />
       </div>
     </div>
   )
