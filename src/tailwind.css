@@ -21,6 +21,15 @@ body {
   .bg-gradient {
     @apply bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white;
   }
+  .heading {
+    @apply text-sm font-light uppercase text-green-400 sm:text-lg;
+  }
+  .sub-heading {
+    @apply grad text-center text-lg font-bold sm:text-2xl;
+  }
+  .body-content {
+    @apply mt-2 text-center text-xs font-light text-white/60 sm:text-base;
+  }
 }
 
 .grad {
@@ -30,6 +39,6 @@ body {
   background-clip: text;
 }
 
-.mw{
+.mw {
   max-width: 1200px;
 }
