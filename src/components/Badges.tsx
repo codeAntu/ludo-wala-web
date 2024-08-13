@@ -11,10 +11,10 @@ export default function Badges() {
 
   return (
     <div className='w-full'>
-      <div className="flex gap-7 items-center justify-center w-full border  py-5 ">
+      <div className="flex gap-7 items-center justify-center w-full py-5 ">
         {
           images.map((image, index) => (
-            <img key={index} src={image} alt="badge" className="h-20 " />
+            <img key={index} src={image} alt="badge" className="h-[88px] " />
           ))
         }
       </div>
