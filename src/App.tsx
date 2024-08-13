@@ -1,15 +1,12 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import HomeScreen from './screens/HomeScreen'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <HomeScreen />,
   },
-]); 
+])
 
 function App() {
   return <RouterProvider router={router} />

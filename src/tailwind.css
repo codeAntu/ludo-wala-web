@@ -1,28 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 .rubik {
   font-family: 'Rubik', sans-serif;
 }
 
-
-*{
+* {
   font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
   background-color: #1b0029;
 }
 
 @layer components {
   .bg-gradient {
-    @apply bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white; 
+    @apply bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white;
   }
 }
