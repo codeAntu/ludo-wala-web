@@ -22,13 +22,13 @@ body {
     @apply bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white;
   }
   .heading {
-    @apply text-sm font-light uppercase text-green-400 sm:text-lg;
+    @apply text-base font-light uppercase text-green-400 sm:text-2xl;
   }
   .sub-heading {
-    @apply grad text-center text-lg font-bold sm:text-2xl;
+    @apply grad text-center text-xl font-bold sm:text-3xl w-full;
   }
   .body-content {
-    @apply mt-2 text-center text-xs font-light text-white/60 sm:text-base;
+    @apply mt-4 text-center text-sm font-light text-white/60 sm:text-xl;
   }
 }
 
@@ -40,5 +40,5 @@ body {
 }
 
 .mw {
-  max-width: 1200px;
+  max-width: 1500px;
 }
