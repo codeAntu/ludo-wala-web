@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Classes */
+
+@tailwind utilities;
+
+/* Custom Styles */
+
+
+@layer components {
+  .bg-gradient {
+    @apply bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white; 
+  }
+}
