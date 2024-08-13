@@ -1,3 +1,4 @@
+import { MenuIcon } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
 
 const options = [
@@ -22,13 +23,16 @@ const options = [
 
 export default function Header() {
   return (
-    <div className='flex w-full items-center justify-center'>
-      <div className='flex w-full max-w-[1200px] items-center justify-between'>
-        <img src='./icon.png' alt='icon' className='size-14' />
-        <div className='flex gap-5'>
+    <div className='fixed top-0 flex w-full items-center justify-center px-5 backdrop-blur-2xl'>
+      <div className='mw flex w-full items-center justify-between py-3'>
+        <img src='./icon.png' alt='icon' className='h-8 sm:h-11' />
+        <div className='hidden gap-5 sm:flex'>
           {options.map((option) => (
             <Option key={option.name} name={option.name} href={option.href} isNew={option.new} />
           ))}
+        </div>
+        <div className='flex sm:hidden border px-1 rounded-lg border-white/50'>
+          <MenuIcon className='text-white w-4'/>
         </div>
       </div>
     </div>
