@@ -50,7 +50,7 @@ function Option({ name, href, isNew }: { name: string; href: string; isNew?: boo
       {name}
 
       {isNew && (
-        <span className='rubik ml-2 rounded-full bg-rose-500 px-1.5 py-[0.1rem] text-[0.5rem] font-bold text-white'>
+        <span className='rubik ml-2 rounded-full bg-rose-500 px-2 py-[0.15rem] text-[0.5rem] font-semibold text-white'>
           New
         </span>
       )}
