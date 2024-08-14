@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Wrap from '@/components/Wrap'
 import { APP_NAME } from '@/constants'
@@ -23,7 +22,6 @@ export default function Download() {
             </p>
           </div>
         </Wrap>
-        <Footer />
       </div>
     </div>
   )

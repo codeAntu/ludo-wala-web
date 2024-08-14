@@ -30,7 +30,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
-      <div className='fixed top-0 flex w-full items-center justify-center px-5 backdrop-blur-3xl sm:px-20'>
+      <div className='fixed z-50 top-0 flex w-full items-center justify-center px-5 backdrop-blur-3xl sm:px-20'>
         <div className='flex w-full items-center justify-between py-3'>
           <img src='./icon.png' alt='icon' className='h-8 sm:h-11' />
           <div className='hidden gap-10 sm:flex'>
