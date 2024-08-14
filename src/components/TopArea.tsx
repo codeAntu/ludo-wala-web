@@ -1,5 +1,6 @@
 import React from 'react'
 import Wrap from './Wrap'
+import { Link } from 'react-router-dom'
 
 export default function TopArea() {
   return (
@@ -8,11 +9,13 @@ export default function TopArea() {
         <SmallTopAre />
         <SmallTopAre2 />
         <div className='hidden flex-col justify-end lg:flex'>
-          <p className='rubik text-g text-5xl font-bold'>₹10 Crore+</p>
+          <p className='rubik text-5xl font-bold text-g'>₹10 Crore+</p>
           <p className='grad mt-2 text-2xl font-bold'>Daily Winnings in Real Cash Games</p>
           <p className='mt-10 text-left text-2xl font-bold text-white/50'>Download App & Get ₹50 free!</p>
           <div className='mt-10'>
-            <a className='btn' href='#'>Get Download Link</a>
+            <Link className='btn' to='download'>
+              Get Download Link
+            </Link>
           </div>
           <div className='mt-8 flex w-2/3 flex-row items-center gap-5'>
             <div className='flex w-full flex-col items-center gap-3'>
@@ -75,9 +78,11 @@ function SmallTopAre() {
       <p className='rubik grad text-center text-lg font-bold italic'>India’s Trusted Real Cash Gaming App</p>
       <SmallTopImages />
       <img src='./images/smallTop.png' className='mt-5 w-full' alt='smallTop' />
-      <p className='rubik text-g mt-5 text-center text-3xl font-bold'>₹10 Crore+</p>
+      <p className='rubik mt-5 text-center text-3xl font-bold text-g'>₹10 Crore+</p>
       <p className='grad mt-2 text-center text-lg font-bold'>Daily Cash Winnings</p>
-      <a className='btn mt-5 w-full' href='#'>Get Download Link</a>
+      <Link className='btn mt-5 w-full' to='download'>
+        Get Download Link
+      </Link>
     </div>
   )
 }
