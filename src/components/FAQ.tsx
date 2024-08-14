@@ -1,6 +1,7 @@
 import type React from 'react'
 import Wrap from './Wrap'
 import { useState } from 'react'
+import { APP_NAME } from '@/constants'
 
 export default function FAQ() {
   return (
@@ -21,23 +22,23 @@ function Question() {
         question='Where can I play money winning games?'
         answer={
           <p className='text-xs text-white/60 sm:text-sm'>
-            Ludo Wala app is an ideal platform to play money-winning games. Play online games earn money with
-            skill-based games like ludo, carrom, call break, snakes & ladder and many more. Download Ludo Wala App now
+            {APP_NAME} app is an ideal platform to play money-winning games. Play online games earn money with
+            skill-based games like ludo, carrom, call break, snakes & ladder and many more. Download {APP_NAME} App now
             and start playing real cash games on highly trusted real money gaming app.
           </p>
         }
       />
       <QuestionItem
-        question='Is it safe to play real money games on  Ludo Wala ?'
+        question={`Is it safe to play real money games on  ${APP_NAME}?`}
         answer={
           <p className='text-xs text-white/60 sm:text-sm'>
-            Ludo Wala App is 100% safe & secure. 5 Crore+ Users have downloaded and played real money games on the Ludo
+            {APP_NAME} App is 100% safe & secure. 5 Crore+ Users have downloaded and played real money games on the Ludo
             Wala money winning platform.
           </p>
         }
       />
       <QuestionItem
-        question='Can I play online cash games and win real money on  Ludo Wala ?'
+        question={`Can I play online cash games and win real money on ${APP_NAME} ?`}
         answer={
           <p className='text-xs text-white/60 sm:text-sm'>
             Yes you can choose to play from various online cash games like Ludo, Carrom, Call Break, Pool, Archery etc.

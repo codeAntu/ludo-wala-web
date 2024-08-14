@@ -1,3 +1,4 @@
+import { APP_NAME } from '@/constants'
 import Wrap from './Wrap'
 import SwiperCore from 'swiper'
 import { Autoplay, Pagination } from 'swiper/modules'
@@ -22,7 +23,7 @@ const reviews = [
   },
   {
     review:
-      'I earned over ₹50,000 in Rush App. It has an easy-to-use interface that motivates you to play more and earn big!',
+      `I earned over ₹50,000 in ${APP_NAME} App. It has an easy-to-use interface that motivates you to play more and earn big!`,
     name: 'Devashish Tomar',
     won: '₹54,325',
     location: 'Dehradun, Uttarakhand',
@@ -30,14 +31,14 @@ const reviews = [
   },
   {
     review:
-      'Main pichle 2 saal se Rush App pe khel raha hu. Maine ₹10,000 se zyaada jeeta hai iss pe. 100% safe aur secure hai ye app!',
+      `Main pichle 2 saal se ${APP_NAME} App pe khel raha hu. Maine ₹10,000 se zyaada jeeta hai iss pe. 100% safe aur secure hai ye app!`,
     name: 'Alok Behera',
     won: '₹12,765',
     location: 'Kanpur, Uttar Pradesh',
     profile: './images/users/user-3.png',
   },
   {
-    review: 'I love spending my free time on Rush App. It is an excellent platform to play games and win money.',
+    review: `I love spending my free time on ${APP_NAME} App. It is an excellent platform to play games and win money.`,
     name: 'Rajesh Sharma',
     won: '₹54,356',
     location: 'Udhampur, J&K',
@@ -45,7 +46,7 @@ const reviews = [
   },
   {
     review:
-      'Rush App mein ₹70,000 se zyaada jeeta hai. Iss app ka graphics best hai jo gaming experience ko acha karta hai!',
+      `${APP_NAME} App mein ₹70,000 se zyaada jeeta hai. Iss app ka graphics best hai jo gaming experience ko acha karta hai!`,
     name: 'Aman Kumar',
     won: '₹74,356',
     location: 'Khagaria, Bihar',

@@ -55,8 +55,8 @@ export default function Play() {
           <p className='heading'>REASONS TO</p>
           <p className='sub-heading'>Play on {APP_NAME}</p>
           <p className='body-content'>
-            Here are some of the reasons why users love to play on the Rush money game app. Check out why players love
-            playing online cash games on Rush money game app.
+            Here are some of the reasons why users love to play on the {APP_NAME} money game app. Check out why players love
+            playing online cash games on {APP_NAME} money game app.
           </p>
         </div>
         <div className='flex flex-wrap'>
