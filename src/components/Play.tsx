@@ -72,7 +72,9 @@ export default function Play() {
 function Card({ card }: { card: Card }) {
   return (
     <div
-      className={card.width === 'big' ? 'w-full p-2 md:w-2/3 xl:w-1/2 xl:p-4' : 'w-1/2 p-2 md:w-1/3 xl:w-1/4 xl:p-4'}
+      className={
+        card.width === 'big' ? 'w-full p-2 md:w-2/3 xl:p-4 2xl:xl:w-1/2' : 'w-1/2 p-2 md:w-1/3 xl:p-4 2xl:w-1/4'
+      }
     >
       <div className='flex flex-col gap-6 rounded-3xl border border-white/20 bg-bg2 p-4 text-white sm:rounded-[3rem] sm:p-8'>
         <div className='pt-2 sm:pt-4'>
@@ -80,7 +82,7 @@ function Card({ card }: { card: Card }) {
           <div className='text-sm font-light text-white/50 sm:text-sm lg:text-lg'>{card.description}</div>
         </div>
         <div>
-          <img src={card.link} alt='' className='rounded-3xl' />
+          <img src={card.link} alt='' className='rounded-3xl ' />
         </div>
       </div>
     </div>
