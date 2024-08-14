@@ -1,4 +1,7 @@
 import Wrap from './Wrap'
+import SwiperCore from 'swiper'
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 interface Review {
   review: string
@@ -51,24 +54,43 @@ const reviews = [
 ]
 
 export default function Reviews() {
+  SwiperCore.use([Autoplay])
   return (
     <Wrap>
-      <div className='flex flex-wrap items-center justify-center'>
+      <div className='hidden flex-wrap items-center justify-center lg:flex'>
         {reviews.map((review, index) => (
           <Review key={index} review={review} />
         ))}
       </div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        pagination={{
+          clickable: false,
+        }}
+        modules={[Pagination]}
+        className='mySwiper lg:hidden'
+        autoplay={{
+          delay: 3000,
+        }}
+      >
+        {reviews.map((review, index) => (
+          <SwiperSlide key={index}>
+            <div className='block'>
+              <Review review={review} />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </Wrap>
   )
 }
 
 function Review({ review }: { review: Review }) {
   return (
-    <div className='w-1/3 p-4'>
+    <div className='w-full p-4 lg:w-1/3'>
       <div className='rounded-3xl bg-bg2 p-5 text-white'>
-        <div className='h-28 rounded-2xl bg-bg3 p-4 text-[0.8rem] font-medium text-amber-300'>
-          {review.review}
-        </div>
+        <div className='h-28 rounded-2xl bg-bg3 p-4 text-[0.8rem] font-medium text-amber-300'>{review.review}</div>
         <div className='flex items-center justify-between px-4 pb-2 pt-4'>
           <div className='flex flex-col gap-1'>
             <div className='flex items-center gap-2'>

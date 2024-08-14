@@ -1,21 +1,23 @@
-import Rating from '@/components/Rating'
-import Header from '../components/Header'
 import Badges from '@/components/Badges'
-import Withdraw from '@/components/Withdraw'
-import SkillBasedGames from '@/components/SkillBasedGames'
-import Install from '@/components/Install'
 import FAQ from '@/components/FAQ'
+import Footer from '@/components/Footer'
+import Install from '@/components/Install'
 import Membership from '@/components/Membership'
 import Play from '@/components/Play'
-import Reviews from '@/components/Review'
+import Rating from '@/components/Rating'
+import Reviews from '@/components/Reviews'
+import SkillBasedGames from '@/components/SkillBasedGames'
 import TopArea from '@/components/TopArea'
-import Footer from '@/components/Footer'
+import Withdraw from '@/components/Withdraw'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import Header from '../components/Header'
 
 export default function HomeScreen() {
   return (
     <div>
       <Header />
-      <div className='flex flex-col gap-20 px-5 pb-52 pt-16 sm:px-20 lg:gap-40'>
+      <div className='flex flex-col gap-20 px-5 pb-16 pt-16 sm:px-20 lg:gap-40'>
         <TopArea />
         <Badges />
         <Withdraw />

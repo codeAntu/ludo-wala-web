@@ -1,6 +1,9 @@
 import React from 'react'
 import Wrap from './Wrap'
 import { APP_NAME } from '@/constants'
+import SwiperCore from 'swiper'
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function Install() {
   const [isExpanded, setIsExpanded] = React.useState(false)
@@ -21,8 +24,8 @@ export default function Install() {
               Click “Download App” button to get an online cash games app for Android or iOS.
             </li>
             <li className='leading-5 sm:leading-10'>
-              Tap “Download anyway” on the general warning message. Ludo Wala is 100% safe & secure & trusted by 5 Crore+
-              real players.
+              Tap “Download anyway” on the general warning message. Ludo Wala is 100% safe & secure & trusted by 5
+              Crore+ real players.
             </li>
             <li className='leading-5 sm:leading-10'>
               Locate the real money games apk on your device to install & signup. Now start playing online game earn
@@ -31,21 +34,46 @@ export default function Install() {
           </ol>
         </div>
       )}
-      <div className='mt-10 flex h-96 w-full items-center justify-center'>
+      <div className='mt-10 hidden h-96 w-full items-center justify-center lg:flex'>
         <Card step={1} text={'Click “Download” Button to continue.'} />
         <Card step={2} text='Click on “Download Anyway” to start downloading.' />
         <Card step={3} text='Turn on “Allow Apps” from this source.' />
         <Card step={4} text='Click on “Install” to play games & earn real cash.' />
       </div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        pagination={{
+          clickable: false,
+        }}
+        modules={[Pagination]}
+        className='mySwiper mt-10 lg:hidden'
+        autoplay={{
+          delay: 3000,
+        }}
+      >
+        <SwiperSlide>
+          <Card step={1} text={'Click “Download” Button to continue.'} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card step={2} text='Click on “Download Anyway” to start downloading.' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card step={3} text='Turn on “Allow Apps” from this source.' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card step={4} text='Click on “Install” to play games & earn real cash.' />
+        </SwiperSlide>
+      </Swiper>
     </Wrap>
   )
 }
 
 function Card({ step, text }: { step: number; text?: string }) {
   return (
-    <div className='h-full w-1/4 p-1.5'>
+    <div className='h-full w-full p-1.5 lg:w-1/4'>
       <div
-        className={`bg-bg2 flex h-full flex-col justify-between rounded-[40px] p-6 ${step <= 2 ? 'border-little-left' : 'border-little-right'}`}
+        className={`flex h-full flex-col justify-between rounded-[40px] bg-bg2 p-6 ${step <= 2 ? 'border-little-left' : 'border-little-right'}`}
       >
         <div></div>
         <div>
