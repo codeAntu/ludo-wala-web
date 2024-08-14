@@ -38,11 +38,19 @@ export default function Header() {
               <Option key={option.name} name={option.name} href={option.href} isNew={option.new} link={option.link} />
             ))}
           </div>
-          <div
-            className='flex rounded-lg border border-white/30 px-1.5 py-0.5 sm:hidden'
-            onClick={() => setIsMenuOpen((prev) => !prev)}
-          >
-            <MenuIcon className='w-5 text-white' />
+          <div className='flex items-center justify-center gap-5 sm:hidden'>
+            <div className='flex'>
+              <img src='./images/green_star.png' className='size-5' />
+              <p className='text-g rubik font-semibold'>
+                4.4 <span className='font-medium text-white/60'> / 5</span>
+              </p>
+            </div>
+            <div
+              className='flex rounded-lg border border-white/30 px-1.5 py-0.5'
+              onClick={() => setIsMenuOpen((prev) => !prev)}
+            >
+              <MenuIcon className='w-5 text-white' />
+            </div>
           </div>
         </div>
       </div>

@@ -192,7 +192,7 @@ function Part1() {
         <div className='flex items-center justify-center md:block'>
           <img src='./icon.png' alt='icon' className='w-24' />
         </div>
-        <div className='text-sm font-medium text-white/65'>
+        <div className='text-justify text-sm text-white/50'>
           {APP_NAME} is an online gaming platform where the competitive spirit of India comes alive. Play AAA Rated
           games like Carrom, Ludo, Call Break & more against each other in skill-games and win real money.
         </div>
@@ -240,7 +240,7 @@ function Part3() {
     <div className='flex flex-col items-center justify-center gap-2 text-white md:gap-5'>
       <div className='flex w-full items-center justify-center border-t border-white/10 py-5 md:border-none'>
         <img src='./images/footer-icons.svg' alt='' className='hidden md:block' />
-        <img src='./images/Group 23575.png' alt='' className='md:hidden' />
+        <img src='./images/Group 23575.png' alt='' className='w-1/2 md:hidden' />
       </div>
       <div className='text-center text-sm text-white/65'>
         {APP_NAME} by Hike is only for people above 18 years of age in states of India where permissible by extant law.

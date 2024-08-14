@@ -7,7 +7,7 @@ const payments = [
 ]
 export default function Withdraw() {
   return (
-    <div className='flex flex-col items-center justify-center gap-4 sm:gap-8 xl:gap-16  '>
+    <div className='hidden flex-col items-center justify-center gap-4 sm:gap-8 lg:flex xl:gap-16'>
       <div className='mw flex w-full flex-col items-center justify-center'>
         <p className='heading'>Instantly</p>
         <p className='sub-heading'>Withdraw Winnings</p>
@@ -16,7 +16,7 @@ export default function Withdraw() {
         style={{
           backgroundImage: "url('./images/bg.png')",
         }}
-        className='flex items-center justify-center gap-0 bg-cover px-5 py-0 sm:py-10 xl:py-28  md:px-7 xl:gap-7 xl:px-28'
+        className='flex items-center justify-center gap-0 bg-cover px-5 py-0 sm:py-10 md:px-7 xl:gap-7 xl:px-28 xl:py-28'
       >
         {payments.map((payment, index) => (
           <div key={index} className='m-4'>

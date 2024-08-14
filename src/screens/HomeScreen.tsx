@@ -8,12 +8,15 @@ import FAQ from '@/components/FAQ'
 import Membership from '@/components/Membership'
 import Play from '@/components/Play'
 import Reviews from '@/components/Review'
+import TopArea from '@/components/TopArea'
+import Footer from '@/components/Footer'
 
 export default function HomeScreen() {
   return (
     <div>
       <Header />
-      <div className='flex flex-col gap-40 px-5 pb-52 pt-20 sm:px-20'>
+      <div className='flex flex-col gap-20 px-5 pb-52 pt-16 sm:px-20 lg:gap-40'>
+        <TopArea />
         <Badges />
         <Withdraw />
         <Rating />
@@ -23,6 +26,7 @@ export default function HomeScreen() {
         <Play />
         <FAQ />
         <Membership />
+        <Footer />
       </div>
     </div>
   )
