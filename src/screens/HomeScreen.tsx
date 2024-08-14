@@ -18,7 +18,7 @@ export default function HomeScreen() {
   return (
     <div>
       <Header />
-      <div className='flex flex-col gap-20 px-5 pb-16 pt-16 sm:px-20 lg:gap-40'>
+      <div className='flex flex-col gap-20 px-5 pb-52 pt-16 sm:px-20 lg:gap-40'>
         <TopArea />
         <Badges />
         <Withdraw />
