@@ -12,6 +12,7 @@ import Withdraw from '@/components/Withdraw'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Header from '../components/Header'
+import Download from '@/components/Download'
 
 export default function HomeScreen() {
   return (
@@ -29,6 +30,7 @@ export default function HomeScreen() {
         <FAQ />
         <Membership />
         <Footer />
+        <Download />
       </div>
     </div>
   )
