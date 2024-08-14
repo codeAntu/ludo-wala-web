@@ -5,7 +5,7 @@ import { useState } from 'react'
 export default function FAQ() {
   return (
     <Wrap>
-      <p className='heading'>MORE QUESTIONS?</p>
+      <p className='heading' id='FAQ'>MORE QUESTIONS?</p>
       <p className='sub-heading'>Here are our FAQ’s</p>
       <Question />
     </Wrap>

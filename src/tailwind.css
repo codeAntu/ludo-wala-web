@@ -15,6 +15,7 @@
 
 body {
   background-color: #1b0029;
+  scroll-behavior: smooth;
 }
 
 @layer components {
