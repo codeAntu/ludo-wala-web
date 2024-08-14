@@ -41,7 +41,7 @@ export default function Header() {
           <div className='flex items-center justify-center gap-5 sm:hidden'>
             <div className='flex'>
               <img src='./images/green_star.png' className='size-5' />
-              <p className='text-g rubik font-semibold'>
+              <p className='rubik font-semibold text-g'>
                 4.4 <span className='font-medium text-white/60'> / 5</span>
               </p>
             </div>

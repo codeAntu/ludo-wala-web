@@ -23,10 +23,10 @@ export default function SkillBasedGames() {
       <p className='body-content'>
         Download real money earning app & start playing 15+ skills based online games to earn money
       </p>
-      <div className='flex flex-wrap w-full justify-center items-center mt-5 sm:mt-14'>
+      <div className='mt-5 flex w-full flex-wrap items-center justify-center sm:mt-14'>
         {images.map((image, index) => (
-          <div className='sm:w-1/5 w-1/3 sm:p-2 p-1' key={index}>
-            <img key={index} src={image} alt='game' className='w-full h-full' />
+          <div className='w-1/3 p-1 sm:w-1/5 sm:p-2' key={index}>
+            <img key={index} src={image} alt='game' className='h-full w-full' />
           </div>
         ))}
       </div>

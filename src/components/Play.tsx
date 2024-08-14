@@ -82,7 +82,7 @@ function Card({ card }: { card: Card }) {
           <div className='text-sm font-light text-white/50 sm:text-sm lg:text-lg'>{card.description}</div>
         </div>
         <div>
-          <img src={card.link} alt='' className='rounded-3xl ' />
+          <img src={card.link} alt='' className='rounded-3xl' />
         </div>
       </div>
     </div>
