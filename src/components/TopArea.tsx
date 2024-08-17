@@ -49,8 +49,8 @@ export default function TopArea() {
             </div>
           </div>
         </div>
-        <div className='hidden pt-7 lg:block'>
-          <img src='./images/topImage.png' className='w-full' alt='topImage' />
+        <div className='hidden pt-10 lg:flex lg:items-end justify-end '>
+          <img src='./images/topImage.png' className='lg:w-5/6 w-full' alt='topImage' />
         </div>
       </div>
     </Wrap>
