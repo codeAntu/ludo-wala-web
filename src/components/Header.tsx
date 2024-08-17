@@ -6,24 +6,32 @@ const options = [
   {
     name: 'Home',
     href: '/',
+    new: false,
     link: true,
   },
   {
-    name: 'Reft & Earn',
+    name: 'How To Play',
     href: '#',
+    new: false,
     link: false,
   },
   {
-    name: 'Ludo Tournament',
+    name: 'Privacy Policy',
     href: '#',
-    new: true,
+    new: false,
     link: false,
   },
   {
-    name: "FAQ's",
-    href: '#FAQ',
+    name: 'Terms Of Use',
+    href: '#',
+    new: false,
     link: false,
   },
+  {
+    name: 'Refund',
+    href: '#',
+    link: false,
+  }
 ]
 
 export default function Header() {

@@ -23,7 +23,7 @@ const cards = [
   },
   {
     link: './images/cards/reason-img-3.png',
-    heading: '1 Referral = ₹1,000',
+    heading: 'Earn 2% On Every Referral Deposit',
     description: 'Refer friends to earn',
     width: 'small',
   },

@@ -11,118 +11,7 @@ const socialMedia = [
 ]
 
 const games = [
-  {
-    type: 'Card Games',
-    games: [
-      {
-        game: 'Call Break',
-        link: '#',
-      },
-      {
-        game: 'Tezz Patti',
-        link: '#',
-      },
-    ],
-    link: '#',
-  },
-  {
-    type: 'Casual Games',
-    // games: ['Carrom', 'Ludo', 'Quizzy', 'Snakes & Ladders'],
-    games: [
-      {
-        game: 'Carrom',
-        link: '#',
-      },
-      {
-        game: 'Ludo',
-        link: '#',
-      },
-      {
-        game: 'Quizzy',
-        link: '#',
-      },
-      {
-        game: 'Snakes & Ladders',
-        link: '#',
-      },
-    ],
-    link: '#',
-  },
-  {
-    type: 'Arcade Games',
-    // games: ['Fruit Fight', 'Brick Smash', 'Knife Master'],
-    games: [
-      {
-        game: 'Fruit Fight',
-        link: '#',
-      },
-      {
-        game: 'Brick Smash',
-        link: '#',
-      },
-      {
-        game: 'Knife Master',
-        link: '#',
-      },
-    ],
-    link: '#',
-  },
-  {
-    type: 'Sports Games',
-    // games: ['Archery', 'Football', 'Golf'],
-    games: [
-      {
-        game: 'Archery',
-        link: '#',
-      },
-      {
-        game: 'Football',
-        link: '#',
-      },
-      {
-        game: 'Golf',
-        link: '#',
-      },
-    ],
-    link: '#',
-  },
-  {
-    type: 'Board Games',
-    // games: ['Carrom', 'Ludo'],
-    games: [
-      {
-        game: 'Carrom',
-        link: '#',
-      },
-      {
-        game: 'Ludo',
-        link: '#',
-      },
-    ],
-    link: '#',
-  },
-  {
-    type: 'Cue Sports',
-    // games: ['Pool'],
-    games: [
-      {
-        game: 'Pool',
-        link: '#',
-      },
-    ],
-    link: '#',
-  },
-  {
-    type: 'Fantasy Games',
-    // games: ['Fantasy Cricket'],
-    games: [
-      {
-        game: 'Fantasy Cricket',
-        link: '#',
-      },
-    ],
-    link: '#',
-  },
+ 
 ]
 
 // Blog
@@ -136,7 +25,7 @@ const games = [
 
 const footerLinks = [
   {
-    type: 'Blog',
+    type: 'How To Play',
     link: '#',
   },
   {
@@ -144,7 +33,7 @@ const footerLinks = [
     link: '#',
   },
   {
-    type: 'FairPlay Policy',
+    type: 'Refund Policy',
     link: '#',
   },
   {
@@ -153,20 +42,13 @@ const footerLinks = [
   },
   {
     type: "FAQ's",
-    link: '#',
+    link: '#FAQ',
   },
   {
     type: 'Terms & Conditions',
     link: '#',
   },
-  {
-    type: 'Bug Bounty Program',
-    link: '#',
-  },
-  {
-    type: 'Sitemap',
-    link: '#',
-  },
+ 
 ]
 
 export default function Footer() {
@@ -178,7 +60,7 @@ export default function Footer() {
         <Part3 />
         <Part4 />
         <div className='text-center text-sm text-white text-white/70'>
-          Ⓒ 2024 HIKE PRIVATE LIMITED. All Rights Reserved.
+          Ⓒ 2024 Sportoni Technologies PRIVATE LIMITED. All Rights Reserved.
         </div>
       </div>
     </Wrap>
@@ -216,22 +98,24 @@ function Part1() {
 
 function Part2() {
   return (
-    <div className='grid grid-cols-2 justify-between gap-6 text-sm lg:flex'>
-      {games.map((game, index) => (
-        <div key={index} className='flex flex-col gap-2'>
-          <a href='' className='text-white/65'>
-            {game.type}
-          </a>
-          <div className='flex flex-col gap-2'>
-            {game.games.map((game, index) => (
-              <a href={game.link} key={index} className='font-semibold text-white'>
-                {game.game}
-              </a>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+    <>
+    </>
+    // <div className='grid grid-cols-2 justify-between gap-6 text-sm lg:flex'>
+    //   {games.map((game, index) => (
+    //     <div key={index} className='flex flex-col gap-2'>
+    //       <a href='' className='text-white/65'>
+    //         {game.type}
+    //       </a>
+    //       <div className='flex flex-col gap-2'>
+    //         {game.games.map((game, index) => (
+    //           <a href={game.link} key={index} className='font-semibold text-white'>
+    //             {game.game}
+    //           </a>
+    //         ))}
+    //       </div>
+    //     </div>
+    //   ))}
+    // </div>
   )
 }
 
@@ -243,7 +127,7 @@ function Part3() {
         <img src='./images/Group 23575.png' alt='' className='w-1/2 md:hidden' />
       </div>
       <div className='text-center text-sm text-white/65'>
-        {APP_NAME} by Hike is only for people above 18 years of age in states of India where permissible by extant law.
+        {APP_NAME} by Sportoni Technologies is only for people above 18 years of age in states of India where permissible by extant law.
         The games involve an element of financial risk and may be habit forming. Please play responsibly at your own
         risk. T&Cs Apply.
       </div>

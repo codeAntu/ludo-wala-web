@@ -6,7 +6,7 @@ import Membership from '@/components/Membership'
 import Play from '@/components/Play'
 import Rating from '@/components/Rating'
 import Reviews from '@/components/Reviews'
-import SkillBasedGames from '@/components/SkillBasedGames'
+//import SkillBasedGames from '@/components/SkillBasedGames'
 import TopArea from '@/components/TopArea'
 import Withdraw from '@/components/Withdraw'
 import 'swiper/css'
@@ -43,7 +43,7 @@ export default function HomeScreen() {
         <Rating />
         <Reviews />
         <Install />
-        <SkillBasedGames />
+        {/* <SkillBasedGames /> */}
         <Play />
         <FAQ />
         <Membership />
