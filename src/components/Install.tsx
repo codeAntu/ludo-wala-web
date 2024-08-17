@@ -80,7 +80,7 @@ function Card({ step, text }: { step: number; text?: string }) {
           <p className='text-sm text-white/70'>Step {step}</p>
           <p className='grad2 mt-1'>{text}</p>
         </div>
-        <img src={`./images/install/step-${step}.png`} alt='install1' className='mt-5 w-full' />
+        <img src={`./images/install/${step}.png`} alt='install1' className='mt-5 w-full' />
         <div></div>
       </div>
     </div>

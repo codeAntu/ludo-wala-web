@@ -49,7 +49,7 @@ export default function TopArea() {
             </div>
           </div>
         </div>
-        <div className='hidden lg:block'>
+        <div className='hidden pt-7 lg:block'>
           <img src='./images/topImage.png' className='w-full' alt='topImage' />
         </div>
       </div>
@@ -77,7 +77,7 @@ function SmallTopAre() {
     <div className='mt-5 block lg:hidden'>
       <p className='rubik grad text-center text-lg font-bold italic'>India’s Trusted Real Cash Gaming App</p>
       <SmallTopImages />
-      <img src='./images/smallTop.png' className='mt-5 w-full' alt='smallTop' />
+      <img src='./images/topImage.png' className='mt-5 w-full' alt='smallTop' />
       <p className='rubik mt-5 text-center text-3xl font-bold text-g'>₹10 Crore+</p>
       <p className='grad mt-2 text-center text-lg font-bold'>Daily Cash Winnings</p>
       <Link className='btn mt-5 w-full' to='download'>

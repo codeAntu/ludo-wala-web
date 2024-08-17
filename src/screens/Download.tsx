@@ -11,9 +11,9 @@ export default function Download() {
         <Wrap>
           <img src='./images/rush_user_profiles.png' className='mt-7 w-2/3 max-w-lg' />
           <video autoPlay loop muted playsInline className='mt-10 w-full max-w-lg'>
-            <source src='./videos/download.webm' type='video/webm' />
+            <source src='./videos/download.mp4' type='video/mp4' />
           </video>
-          <div className='flex gap-5'>
+          <div className='mt-20 flex gap-5'>
             <ShieldCheckIcon size={40} className='text-g' />
             <p className='rubik text-2xl font-bold text-g'>
               {APP_NAME} is 100% safe and secure.
