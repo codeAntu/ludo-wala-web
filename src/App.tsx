@@ -4,6 +4,7 @@ import Download from './screens/Download'
 import CodeOfConduct from './screens/CodeOfConduct'
 import Privacy from './screens/Privacy'
 import Terms from './screens/Terms'
+import Contact from './screens/Contact'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/privacy-policy',
     element: <Privacy />,
+  },
+  {
+    path: '/contact',
+    element: <Contact />,
   },
 ])
 
