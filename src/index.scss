@@ -1,3 +1,7 @@
+* {
+  color: white;
+}
+
 .swiper-wrapper {
   // min-height: 200px;
   padding-bottom: 40px;
@@ -34,4 +38,9 @@ $color: #ececec;
 
 .mySwiper {
   width: 100%;
+}
+
+th,
+td {
+  padding: 20px !important;
 }

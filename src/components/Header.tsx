@@ -17,21 +17,21 @@ const options = [
   },
   {
     name: 'Privacy Policy',
-    href: '#',
+    href: '/privacy-policy',
     new: false,
-    link: false,
+    link: true,
   },
   {
     name: 'Terms Of Use',
-    href: '#',
+    href: '/terms-and-conditions',
     new: false,
-    link: false,
+    link: true,
   },
   {
     name: 'Code of Conduct',
-    href: '#',
+    href: '/code-of-conduct',
     new: false,
-    link: false,
+    link: true,
   },
   {
     name: 'Refund',
