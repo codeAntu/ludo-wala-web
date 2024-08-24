@@ -11,10 +11,10 @@ export default function TopArea() {
         <div className='hidden flex-col justify-end lg:flex'>
           <p className='rubik text-5xl font-bold text-g'>₹10 Crore+</p>
           <p className='grad mt-2 text-2xl font-bold'>Daily Winnings in Real Cash Games</p>
-          <p className='mt-10 text-left text-2xl font-bold text-white/50'>Download App & Get ₹50 free!</p>
+          <p className='mt-10 text-left text-2xl font-bold text-white/50'>Download App and Win Real Cash</p>
           <div className='mt-10'>
             <Link className='btn' to='download'>
-              Get Download Link
+              Download App Now
             </Link>
           </div>
           <div className='mt-8 flex w-2/3 flex-row items-center gap-5'>
@@ -49,8 +49,8 @@ export default function TopArea() {
             </div>
           </div>
         </div>
-        <div className='hidden pt-10 lg:flex lg:items-end justify-end '>
-          <img src='./images/topImage.png' className='lg:w-5/6 w-full' alt='topImage' />
+        <div className='hidden justify-end pt-10 lg:flex lg:items-end'>
+          <img src='./images/topImage.png' className='w-full lg:w-5/6' alt='topImage' />
         </div>
       </div>
     </Wrap>
@@ -81,7 +81,7 @@ function SmallTopAre() {
       <p className='rubik mt-5 text-center text-3xl font-bold text-g'>₹10 Crore+</p>
       <p className='grad mt-2 text-center text-lg font-bold'>Daily Cash Winnings</p>
       <Link className='btn mt-5 w-full' to='download'>
-        Get Download Link
+        Download App Now
       </Link>
     </div>
   )
@@ -90,7 +90,7 @@ function SmallTopAre() {
 function SmallTopImages() {
   return (
     <div className='mt-4 flex items-center justify-center gap-4'>
-      <img src='./images/topArea/smallTop/1.png' className='h-8' />
+      {/* <img src='./images/topArea/smallTop/1.png' className='h-8' /> */}
       <img src='./images/topArea/smallTop/2.png' className='h-8' />
       <img src='./images/topArea/smallTop/3.png' className='h-8' />
       <img src='./images/topArea/smallTop/4.png' className='h-8' />

@@ -46,7 +46,7 @@ export default function HomeScreen() {
         {/* <SkillBasedGames /> */}
         <Play />
         <FAQ />
-        <Membership />
+        {/* <Membership /> */}
         <Footer />
         {isScrolled && <Download />}
       </div>

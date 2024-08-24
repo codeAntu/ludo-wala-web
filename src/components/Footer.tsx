@@ -60,7 +60,7 @@ export default function Footer() {
         <Part3 />
         <Part4 />
         <div className='text-center text-sm text-white text-white/70'>
-          Ⓒ 2024 Sportoni Technologies PRIVATE LIMITED. All Rights Reserved.
+          Ⓒ 2024 Sportoni Technologies. All Rights Reserved.
         </div>
       </div>
     </Wrap>
@@ -127,7 +127,7 @@ function Part3() {
         <img src='./images/Group 23575.png' alt='' className='w-1/2 md:hidden' />
       </div>
       <div className='text-center text-sm text-white/65'>
-        {APP_NAME} by Sportoni Technologies is only for people above 18 years of age in states of India where permissible by extant law.
+        {APP_NAME} Powered by Sportoni Technologies is only for people above 18 years of age in states of India where permissible by extant law.
         The games involve an element of financial risk and may be habit forming. Please play responsibly at your own
         risk. T&Cs Apply.
       </div>

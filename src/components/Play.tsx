@@ -36,7 +36,7 @@ const cards = [
   {
     link: './images/cards/reason-img-7.png',
     heading: 'Big Tournaments',
-    description: 'Zero entry fee',
+    description: 'Tournament at lowest cost',
     width: 'small',
   },
   {
