@@ -2,14 +2,37 @@ import Header from '@/components/Header'
 import Wrap from '@/components/Wrap'
 import { APP_NAME } from '@/constants'
 import { ShieldCheckIcon } from 'lucide-react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+
+const api = 'https://system.ludowalagames.com/api/settings/getSetting'
+
+export interface Settings {
+  status: boolean
+  forceUpdate: string
+  apkVersion: string
+}
+
 export default function Download() {
+  const [app_version, setAppVersion] = useState('latest')
+
+  useEffect(() => {
+    fetch(api, { method: 'POST' })
+      .then((response) => response.json())
+      .then((data: Settings) => {
+        console.log(data)
+        if (data.status === true) {
+          setAppVersion(data.apkVersion)
+        }
+      })
+  }, [])
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      window.location.href = '/LudoWalaV1.0.apk'
+      window.location.href = '/Ludo_Wala_' + app_version + '.apk'
     }, 3000)
     return () => clearTimeout(timer)
-  }, [])
+  }, [app_version])
+
   return (
     <div>
       <Header />
@@ -32,5 +55,3 @@ export default function Download() {
     </div>
   )
 }
-
-
